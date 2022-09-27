@@ -16,36 +16,20 @@ export const Signin = () => {
 				alignContent="center"
 				wrap="wrap"
 			>
-				<Grid item xs={4}>
+				<Grid item xs={12}>
 					PokeRanking
 				</Grid>
 				<Divider orientation="vertical" flexItem />
-				<Grid item xs={4}>
+				<Grid item xs={12}>
 					signin
 				</Grid>
+				<Grid item xs={12}>
+					<TextField label="Outlined secondary" color="secondary" focused />
+				</Grid>
+				<Grid item xs={12}>
+					<TextField label="Outlined secondary" color="secondary" focused />
+				</Grid>
 			</Grid>
-			<Box
-				component="form"
-				sx={{
-					'& > :not(style)': { m: 1, width: '25ch' },
-				}}
-				noValidate
-				autoComplete="off"
-			>
-				<TextField label="Outlined secondary" color="secondary" focused />
-				<TextField
-					label="Filled success"
-					variant="filled"
-					color="success"
-					focused
-				/>
-				<TextField
-					label="Standard warning"
-					variant="standard"
-					color="warning"
-					focused
-				/>
-			</Box>
 		</>
 	);
 };
